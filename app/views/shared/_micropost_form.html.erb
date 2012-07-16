@@ -1,6 +1,6 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
-  <div class="field">
+  <div class="field no-indent">
     <%= f.text_area :content, placeholder: "What's something else you want to buy?" %>
   </div>
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>

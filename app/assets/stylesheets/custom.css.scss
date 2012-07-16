@@ -200,9 +200,10 @@ input, textarea, select, .uneditable-input {
   @include box_sizing;
 }
 
-#blah_form input, textarea, b4 {margin-left:80px}
+#blah_form input, textarea, p2 {margin-left:80px}
 #blah_loop input {margin-left:80px}
 
+.no-indent textarea { margin-left:0 }
 
 textarea {
   border: 1px solid #bbb;
@@ -275,4 +276,5 @@ aside {
 
 div.box {
     border: 3px solid black;
+    margin-left: 80px;
 }
