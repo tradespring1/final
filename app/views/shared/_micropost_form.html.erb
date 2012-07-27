@@ -1,7 +1,7 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field no-indent">
-    <%= f.text_area :content, placeholder: "What's something else you want to buy?" %>
+    <%= f.text_area :content, placeholder: "What is something else you want to buy? Include details such as your location, your price range, intended use of the product/service, and product/service specifications. The more detail the better." %>
   </div>
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
 <% end %>
