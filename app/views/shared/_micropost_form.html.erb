@@ -1,9 +1,9 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field no-indent">
-    <%= f.text_area :content, placeholder: "What is something else you want to buy? Include details such as your location, your price range, intended use of the product/service, and product/service specifications. The more detail the better." %>
-    <%= f.text_area :content, placeholder: "What price range are you looking for?" %>
-    <%= f.text_area :content, placeholder: "Where is your location/Where are you looking to purchase this. If you are willing to have it shipped to you, indicate that here." %>
+    <%= f.text_area :product, placeholder: "Describe the product/service you would like to buy. Include product specifications such as size/dimensions, model, year, brand, make, ect. Information on how you are planning on using the product/service is always helpful" %>
+    <%= f.text_area :price, placeholder: "What price range are you looking for?" %>
+    <%= f.text_area :location, placeholder: "What is your location? If you are willing to have it shipped to you indicate that here." %>
   </div>
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
 <% end %>

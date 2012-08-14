@@ -1,9 +1,12 @@
 class Micropost < ActiveRecord::Base
-  attr_accessible :content
+  attr_accessible :product, :price, :location
+  
   belongs_to :user
   has_many :comments
 
-  validates :content, presence: true, length: { maximum: 600 }
+  validates :product, presence: true, length: { maximum: 600 }
+  validates :price, presence: true, length: { maximum: 600 }
+  validates :location, presence: true, length: { maximum: 600 }
   validates :user_id, presence: true
   
   default_scope order: 'microposts.created_at DESC'
